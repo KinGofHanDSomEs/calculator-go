@@ -41,6 +41,7 @@ flowchart TD
 6. Создайте клон репозитория с GitHub. Для этого в терминале Visual Studio Code введите следующую команду:
 ```
 git clone https://github.com/kingofhandsomes/calculator-go
+cd calculator-go
 ```
 7. Зарегистрируйтесь и установите [Postman](https://www.postman.com/).
 ## Запуск приложения
