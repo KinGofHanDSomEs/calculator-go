@@ -131,7 +131,7 @@ go run cmd/calculator/main.go --config="./config/local.yaml"
 - *неверный id выражения:*
 ![image](https://github.com/user-attachments/assets/1caccb36-4cba-4343-83c2-32a707e88b71)
 ## Тесты
-**Запуск тестов по отдельности в консоли:**
+**Запуск тестов по отдельности:**
 - *модульные:*
 ```
 go test ./internal/transport/auth/test/auth_test.go
