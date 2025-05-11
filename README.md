@@ -107,3 +107,26 @@ go run cmd/calculator/main.go --config="./config/local.yaml"
 ![image](https://github.com/user-attachments/assets/a9654414-86ca-4547-995e-f1fdb211d0f7)
 - *неверный login:*
 ![image](https://github.com/user-attachments/assets/ac5b57b0-ab01-439b-9648-11e5dc44a9dc)
+- *неверная json структура запроса:*  
+![image](https://github.com/user-attachments/assets/2fdcc79f-ba36-41af-9d8a-a7d825b22868)
+3. **Calculate**
+- *неверный токен:*  
+![image](https://github.com/user-attachments/assets/f4630b1f-3dbd-45e3-9d25-04b18f684ead)
+- *время действия токена истекло:*  
+![image](https://github.com/user-attachments/assets/8fe0a322-0324-4028-a89d-7ba09af995ac)
+- *неверное выражение:*  
+![image](https://github.com/user-attachments/assets/2fd9a8f5-77c9-4805-a700-111dffb87336)
+- *неверная json структура запроса:*  
+![image](https://github.com/user-attachments/assets/af758a6b-a3b4-4687-9cfe-ec8c503f9f50)
+4. **Expressions**
+- *неверный токен:*  
+![image](https://github.com/user-attachments/assets/71dd5e33-36dc-44a1-b061-d61e0b3c79cb)
+- *время действия токена истекло:*  
+![image](https://github.com/user-attachments/assets/b4bbfbad-edaf-434a-bfb3-2cba9b805c09)
+5. **Expression**
+- *неверный токен:*  
+![image](https://github.com/user-attachments/assets/4d7a157f-df5f-4e76-9df8-8ca5ce3486f5)
+- *время действия токена истекло:*  
+![image](https://github.com/user-attachments/assets/cd824b33-43a1-4a2d-902f-4df38d97f9e8)
+- *неверный id выражения:*
+![image](https://github.com/user-attachments/assets/1caccb36-4cba-4343-83c2-32a707e88b71)
