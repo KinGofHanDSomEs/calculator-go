@@ -1,0 +1,33 @@
+syntax = "proto3";
+package task;
+option go_package = "github.com/kingofhandsomes/calculator-go/proto;task";
+
+service TaskService {
+  rpc GetTask (GetTaskRequest) returns (GetTaskResponse);
+  rpc PostTask (PostTaskRequest) returns (PostTaskResponse);
+}
+
+message GetTaskRequest {
+  
+}
+
+message GetTaskResponse {
+  string login = 1;
+  int64 id_expression = 2;
+  int64 id_task = 3;
+  float arg1 = 4;
+  float arg2 = 5;
+  string operation = 6;
+}
+
+message PostTaskRequest {
+  string login = 1;
+  int64 id_expression = 2;
+  int64 id_task = 3;
+  int64 operation_time = 4;
+  float result = 5;
+}
+
+message PostTaskResponse {
+
+}

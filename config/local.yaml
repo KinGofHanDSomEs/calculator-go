@@ -1,0 +1,10 @@
+env: "local"
+storage_path: "./storage/storage.db"
+token_ttl: 1h
+TIME_ADDITION_MS: 5s
+TIME_SUBTRACTION_MS: 10s
+TIME_MULTIPLICATIONS_MS: 15s
+TIME_DIVISIONS_MS: 20s
+COMPUTING_POWER: 3
+port: 8080
+grpc_port: 44044
