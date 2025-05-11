@@ -130,3 +130,20 @@ go run cmd/calculator/main.go --config="./config/local.yaml"
 ![image](https://github.com/user-attachments/assets/cd824b33-43a1-4a2d-902f-4df38d97f9e8)
 - *неверный id выражения:*
 ![image](https://github.com/user-attachments/assets/1caccb36-4cba-4343-83c2-32a707e88b71)
+## Тесты
+**Запуск тестов по отдельности в консоли:**
+- *модульные:*
+```
+go test ./internal/transport/auth/test/auth_test.go
+go test ./internal/transport/orchestrator/test/orchestrator_test.go
+```
+- *интеграционные:*
+```
+go test ./internal/app/test/app_test.go
+```
+**Запуск всех тестов сразу:**
+```
+go test ./...
+```
+## Связь с разработчиком
+*Телеграмм:* **@KinGofHanDSomEs**
