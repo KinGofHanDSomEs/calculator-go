@@ -70,6 +70,27 @@ go run storage/init/main.go
 go run cmd/calculator/main.go --config="./config/local.yaml"
 ```
 ## Работа пользователя с сервером
-1. Аутентификация (Регистрация):    
-![image](https://github.com/user-attachments/assets/0b51fa80-5847-492d-8a3f-c736254f74ef)
-2. Авторизация (Вход):
+1. **Регистрация:**  
+![image](https://github.com/user-attachments/assets/b0813a08-66c8-433d-8d2a-e37429729b6c)
+2. **Вход (аутентификация):**  
+![image](https://github.com/user-attachments/assets/38af6a3f-803b-40f9-aa9a-ede02bf89a57)  
+*Получаем токен. Для последующих запросов вставляем его в Headers - Authorization:*  
+![image](https://github.com/user-attachments/assets/d8d7c961-e2c2-4a1c-978d-91ddb91d5ec8)  
+> [!TIP]
+> Данный токен содержит в себе ваши данные, срок его действия и является проводником для работы с оркестратором.
+3. **Отправка выражения на вычисление:**  
+![image](https://github.com/user-attachments/assets/3ab9eb7b-e936-475b-ac9f-c604a1ebc5b4)
+4. **Вывод всех выражений:**  
+![image](https://github.com/user-attachments/assets/0f314bcf-52bd-45c3-9672-aa5adb7def69)
+5. **Вывод одного выражения:**
+![image](https://github.com/user-attachments/assets/88285fbd-9924-47ab-9125-a14e421c8f90)
+## Работа агентов с сервером
+Для этого используется gRPC, создается сервер и клиент, в качестве сервера выступает оркестратор, в качестве клиента - агенты, которые получают задачи и асинхронно выполняют их. Пользователь не может выступать клиентом. Запросы:
+- Запрос на получение задачи:  
+![image](https://github.com/user-attachments/assets/a7934dbc-e0d5-4b36-912c-ec93f02da78a)
+- Запрос на отправку решения задачи:
+![image](https://github.com/user-attachments/assets/8b3e2ae1-40d9-422f-a190-5d12f5a42802)
+## Обработка ошибок
+1. **Register**
+- Пустые поля login или password:  
+
