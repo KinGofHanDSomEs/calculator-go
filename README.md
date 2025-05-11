@@ -64,7 +64,7 @@ go run storage/init/main.go
 - TIME_DIVISIONS_MS - длительность вычисления деления;
 - COMPUTING_POWER - количество агентов, которые будут асинхронно вычислять задачи;
 - port - порт для Rest Api, то есть для работы пользователя с сервером;
-- grpc_port - порт для gRPC, то есть для работы агентов с сервером;
+- grpc_port - порт для gRPC, то есть для работы агентов с сервером.
 4. Запустите приложение:
 ```
 go run cmd/calculator/main.go --config="./config/local.yaml"
