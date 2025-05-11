@@ -90,7 +90,20 @@ go run cmd/calculator/main.go --config="./config/local.yaml"
 ![image](https://github.com/user-attachments/assets/a7934dbc-e0d5-4b36-912c-ec93f02da78a)
 - Запрос на отправку решения задачи:
 ![image](https://github.com/user-attachments/assets/8b3e2ae1-40d9-422f-a190-5d12f5a42802)
-## Обработка ошибок
+## Вывод ошибок
 1. **Register**
-- Пустые поля login или password:  
-
+- *пустые поля login или password:*  
+![image](https://github.com/user-attachments/assets/5a270ec2-73ed-4d74-84db-7e6832d1909c)
+![image](https://github.com/user-attachments/assets/7f8ffb32-3c7b-4e9e-a58e-df465e531f18)
+- *повторная отправка такого же login:*  
+![image](https://github.com/user-attachments/assets/e6c03e43-51b9-4bcc-b8b2-3fd855dba7eb)
+- *неверная json структура запроса:*
+![image](https://github.com/user-attachments/assets/b297965c-7598-43bd-981d-7d8be3132244)
+2. **Login**
+- *пустые поля login или password:*
+![image](https://github.com/user-attachments/assets/98119701-1d2c-4fcc-ba3b-5a23db7b0564)
+![image](https://github.com/user-attachments/assets/d2619fea-e246-499c-af93-cda37d37683b)
+- *неверный password:*  
+![image](https://github.com/user-attachments/assets/a9654414-86ca-4547-995e-f1fdb211d0f7)
+- *неверный login:*
+![image](https://github.com/user-attachments/assets/ac5b57b0-ab01-439b-9648-11e5dc44a9dc)
