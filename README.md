@@ -54,7 +54,7 @@ go mod tidy
 go run storage/init/main.go
 ```
 > [!TIP]
-> Может возникнуть ошибка, для её решения установите [MinGW-W64](https://github.com/niXman/mingw-builds-binaries?tab=readme-ov-file) и поместите в системную переменную среды path путь до mingw64\bin, включая его (например, "C:\mingw64\bin").
+> Может возникнуть ошибка, для её решения установите [MinGW-W64](https://github.com/niXman/mingw-builds-binaries?tab=readme-ov-file) и поместите в системную переменную среды path путь до mingw64\bin, включая его (например, "C:\mingw64\bin"). В консоли проекта на windows измените переменную env: $env:CGO_ENABLED=1. Для Linux (наверное, у меня винда): export CGO_ENABLED=1.
 3. Установите необходимую конфигурацию. По пути 'config/local.yaml' находится файл, в котором присутствуют следующие переменные:
 - env - происхождение конфигурации;
 - storage_path - путь, по которому находится хранилище данных;
